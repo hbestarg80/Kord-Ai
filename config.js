@@ -3,16 +3,16 @@ const { existsSync } = require('fs')
 if (existsSync('config.env')) require('dotenv').config({ path: './config.env' })
 
 module.exports = {
-    SESSION_ID: process.env.SESSION_ID || 'kord_ai-9OkRf09wHteRhbOh',
-    OWNER_NUMBER: process.env.OWNER_NUMBER || "2348104029966",
+    SESSION_ID: process.env.SESSION_ID || 'kord_ai-Pm8AOkKR6jzjLiOv',
+    OWNER_NUMBER: process.env.OWNER_NUMBER || "2349043883888",
     WORKTYPE: process.env.WORKTYPE || "private",
-    PREFIX: process.env.PREFIX || "[.]",
+    PREFIX: process.env.PREFIX || "[]",
     ALWAYS_ONLINE: process.env.ALWAYS_ONLINE || true,
     MONGODB_URI: process.env.MONGODB_URI || "",
     STATUS_VIEW: process.env.STATUS_VIEW || true,
     SAVE_STATUS: process.env.SAVE_STATUS || false,
-    LIKE_STATUS: process.env.SAVE_STATUS || false,
-    STATUS_EMOJI: process.env.STATUS_EMOJI || "🥏",
+    LIKE_STATUS: process.env.SAVE_STATUS || true,
+    STATUS_EMOJI: process.env.STATUS_EMOJI || "💕",
     ERROR_MSG: process.env.ERROR_MSG || true,
     TIMEZONE: process.env.TIMEZONE || "Africa/Lagos",
     CAPTION: process.env.CAPTION || "",
@@ -29,7 +29,7 @@ module.exports = {
     AUDIO_DATA: process.env.AUDIO_DATA || "Kord;🤍",
     SUDO: process.env.SUDO || "", // example: 23412345667,2341234567
     MODS: process.env.MODS || "",
-    REJECT_CALL: process.env.REJECT_CALL || "off",
+    REJECT_CALL: process.env.REJECT_CALL || "on",
     WARNCOUNT: process.env.WARNCOUNT || "4",
     LANG_CODE: process.env.LANG_CODE || "en",
     VV_CMD: process.env.VV_CMD || "👀",
